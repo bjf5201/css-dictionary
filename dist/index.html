@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Bethany Fannin" />
+    <title>CSS Dictionary</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="Container">
+      <header role="banner" class="Header">
+        <h1 class="Title">CSS Dictionary</h1>
+        <p class="Baseline">
+          Define
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors"
+            rel="noopener noreferrer"
+            target="_blank"
+            >CSS selectors</a
+          >
+          so humans can understand them.
+        </p>
+      </header>
+
+      <main role="main" class="Main">
+        <form id="form" class="Form" action="/">
+          <label for="selector" class="Label">🤯 Selector</label>
+          <input
+            type="text"
+            name="selector"
+            id="selector"
+            required
+            class="Input"
+            placeholder="e.g. p.foo a[href]"
+            autofocus
+            aria-describedby="result"
+          />
+          <button type="submit" class="Button">Define ✨</button>
+        </form>
+        <div id="result" class="Result"></div>
+        <div id="specificity" class="Specificity"></div>
+      </main>
+    </div>
+
+    <footer role="contentinfo" class="Footer">
+      <p>
+        &copy; Made with
+        <span role="img" aria-label="love">💖</span> by
+        <a
+          href="https://bethanyfannin.com"
+          rel="noopener noreferrer"
+          target="_blank"
+          >Bethany Fannin</a
+        >
+        ·
+        <a
+          href="https://github.com/bjf5201/css-dictionary"
+          rel="noopener noreferrer"
+          target="_blank"
+          >GitHub</a
+        >
+      </p>
+    </footer>
+
+    <script src="./bundle.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => App.init())
+    </script>
+  </body>
+</html>
