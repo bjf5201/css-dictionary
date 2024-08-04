@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.8.3",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.3.1",
+    "rollup": "^1.31.1",
+    "rollup-plugin-terser": "^5.3.1"
+  },
+  "dependencies": {
+    "css-what": "^4.0.0",
+    "specimen": "^0.2.0"
+  },
+  "scripts": {
+    "bundle:ui": "rollup --config rollup.config.ui.js",
+    "bundle:lib": "rollup --config rollup.config.lib.js",
+    "test": "jest --config jest.config.js",
+    "serve": "npx serve dist",
+    "dev": "npm run test --watch && npm run bundle:ui --watch && npm run bundle:lib --watch && npm run serve",
+    "deploy": "git push origin `git subtree split --prefix dist master`:gh-pages --force"
+  }
+}
