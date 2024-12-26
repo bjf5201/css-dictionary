@@ -69,8 +69,8 @@ const explainAttrOperator = attr => {
     return attr.action === 'equals' ? 'whose value is empty' : ''
   }
 
-  const casing = attr.ignoreCase ? ' (regardless of casing)' : ''
-  const value = highlight(attr.value) + casing
+//  const casing = attr.ignoreCase ? ' (regardless of casing)' : ''
+  const value = highlight(attr.value)
 
   switch (attr.action) {
     case 'equals':

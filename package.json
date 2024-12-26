@@ -17,9 +17,8 @@
   "scripts": {
     "bundle:ui": "rollup --config rollup.config.ui.js",
     "bundle:lib": "rollup --config rollup.config.lib.js",
-    "test": "jest --config jest.config.js",
-    "serve": "yarn dlx serve dist",
-    "dev": "yarn run test --watch && yarn run bundle:ui --watch && yarn run bundle:lib --watch && yarn run serve",
-    "deploy": "git push origin `git subtree split --prefix dist master`:gh-pages --force"
+    "test": "jest --config jest.config.cjs",
+    "serve": "npx serve dist",
+    "deploy": "git push origin `git subtree split --prefix dist main`:gh-pages --force"
   }
 }
