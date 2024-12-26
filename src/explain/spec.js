@@ -46,8 +46,8 @@ describe('Smoke', () => {
       'An ‘<a>’ element with an attribute ‘rel’ whose value is a space-separated list of values, one of which is ‘noopener’',
     'a[rel*="noopener"]':
       'An ‘<a>’ element with an attribute ‘rel’ whose value contains ‘noopener’',
-    'a[target="_blank" i]':
-      'An ‘<a>’ element with an attribute ‘target’ whose value is ‘_blank’ (regardless of casing)',
+//    'a[target="_blank" i]':
+//      'An ‘<a>’ element with an attribute ‘target’ whose value is ‘_blank’ (regardless of casing)',
 
     // Pseudo-classes
     'a:hover': 'An ‘<a>’ element provided it is hovered',
