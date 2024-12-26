@@ -5,5 +5,6 @@ Web app that helps users understand the relationships between CSS selectors via 
 View the app live here: [CSS Dictionary](https://css-dictionary.bethanyfannin.com/)
 
 Full link below:
+
 [https://css-dictionary.bethanyfannin.com/](https://css-dictionary.bethanyfannin.com/)
 
